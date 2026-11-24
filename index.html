@@ -1,252 +1,219 @@
 
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Logiciels Libres et Open Sources 2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-* { box-sizing: border-box; }
+    <title>Logiciels Libres et Open Sources 2</title>
 
-body {
-  margin: 0;
-  padding: 20px;
-  background: #edf1ed;
-  font-family: "Times New Roman", serif;
-  color: #172c20;
-}
-
-.page {
-  max-width: 850px;
-  min-height: 1100px;
-  margin: auto;
-  padding: 55px 45px;
-  background: white;
-  border: 3px double #17633e;
-  text-align: center;
-}
-
-.
-.bilingual-header {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.arabic {
-  direction: rtl;
-  font-family: Arial, sans-serif;
-  font-size: 19px;
-  font-weight: bold;
-  line-height: 1.7;
-}
-
-.arabic p {
-  margin: 5px 0;
-}
-
-.french {
-  direction: ltr;
-  font-family: "Times New Roman", serif;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-
-.french p {
-  margin: 5px 0;
-}
-
-
-.university {
-  font-size: 25px;
-  color: #17633e;
-  font-weight: bold;
-  margin-top: 25px;
-}
-
-.department {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.
-.top-header {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr 1fr;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  margin: 25px 0 55px;
-}
-
-.logo-side {
-  width: 100%;
-  max-height: 145px;
-  object-fit: contain;
-}
-
-.institution {
-  text-align: center;
-}
-
-.bilingual-header {
-  text-align: center;
-}
-
-.arabic {
-  direction: rtl;
-  font-family: Arial, sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  line-height: 1.6;
-}
-
-.french {
-  direction: ltr;
-  font-size: 10px;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-.university {
-  color: #17633e;
-  font-size: 19px;
-  font-weight: bold;
-}
-
-.department {
-  font-size: 11px;
-  font-weight: bold;
-}
-
-@media (max-width: 600px) {
-  .top-header {
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 5px;
-  }
-
-  .logo-side {
-    max-height: 85px;
-  }
-
-  .arabic { font-size: 10px; }
-  .french { font-size: 7px; }
-  .university { font-size: 12px; }
-  .department { font-size: 8px; }
-}
-
-
-h2 {
-  margin-top: 65px;
-  font-size: 27px;
-  color: #17633e;
-}
-
-.course {
-  font-size: 30px;
-  font-weight: bold;
-  margin-top: 25px;
-  line-height: 1.5;
-}
-
-.details {
-  text-align: left;
-  margin: 80px auto;
-  max-width: 550px;
-  font-size: 21px;
-  line-height: 2;
-}
-
-@media (max-width: 600px) {
-  body { padding: 8px; }
-  .page { padding: 30px 15px; min-height: 850px; }
-  .republic { font-size: 13px; }
-  .ministry { font-size: 11px; }
-  .university { font-size: 19px; }
-  .department { font-size: 12px; }
-  .logos img { height: 110px; }
-  h2 { font-size: 22px; }
-  .course { font-size: 23px; }
-  .details { font-size: 17px; margin: 55px auto; }
-}
-</style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="page">
 
+    <main class="cover">
 
+        <!-- University Header -->
+        <header class="header">
 
-<div class="top-header">
+            <!-- Department Logo -->
+            <div class="logo-container">
+                <img
+                    src="images/logo-departement.jpg"
+                    alt="Logo du département"
+                    class="logo"
+                >
+            </div>
 
-  <img class="logo-side"
-       src="images/logo-departement.jpg"
-       alt="Logo du département">
+            <!-- Official Information -->
+            <div class="institution">
 
-  <div class="institution">
+                <div class="arabic-header" dir="rtl">
+                    <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+                    <p>وزارة التعليم العالي والبحث العلمي</p>
+                </div>
 
-    <div class="bilingual-header">
-      <div class="arabic">
-        <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
-        <p>وزارة التعليم العالي والبحث العلمي</p>
-      </div>
+                <div class="french-header" dir="ltr">
+                    <p>
+                        RÉPUBLIQUE ALGÉRIENNE
+                        DÉMOCRATIQUE ET POPULAIRE
+                    </p>
 
-      <div class="french">
-        <p>RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE</p>
-        <p>MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE</p>
-      </div>
-    </div>
+                    <p>
+                        MINISTÈRE DE L'ENSEIGNEMENT
+                        SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE
+                    </p>
+                </div>
 
-    <p class="university">
-      UNIVERSITÉ 20 AOÛT 1955 – SKIKDA
-    </p>
+            </div>
 
-    <p class="department">
-      DÉPARTEMENT DES SCIENCES DE LA NATURE ET DE LA VIE
-    </p>
+            <!-- University Logo -->
+            <div class="logo-container">
+                <img
+                    src="images/logo-universite.jpg"
+                    alt="Logo de l'université"
+                    class="logo"
+                >
+            </div>
 
-  </div>
+        </header>
 
-  <img class="logo-side"
-       src="images/logo-universite.jpg"
-       alt="Logo de l'université">
+        <!-- University Information -->
+        <section class="university-info">
 
-</div>
+            <h1>UNIVERSITÉ 20 AOÛT 1955 – SKIKDA</h1>
 
+            <p>
+                DÉPARTEMENT DES SCIENCES
+                DE LA NATURE ET DE LA VIE
+            </p>
 
-</div>
+        </section>
 
+        <!-- Main Content -->
+        <section class="main-content">
 
-<p class="university">
-UNIVERSITÉ 20 AOÛT 1955 – SKIKDA
-</p>
+            <div class="course-label">
+                COURS / TP
+            </div>
 
-<p class="department">
-DÉPARTEMENT DES SCIENCES DE LA NATURE ET DE LA VIE
-</p>
+            <div class="title-decoration"></div>
 
-<div class="logos">
-<img src="images/logo-departement.jpg"
-alt="Logo du département">
+            <h2>
+                LOGICIELS LIBRES ET
+                <span>OPEN SOURCES 2</span>
+            </h2>
 
-<img src="images/logo-universite.jpg"
-alt="Logo de l'université">
-</div>
+            <div class="title-decoration"></div>
 
-<h2>TRAVAIL PRATIQUE</h2>
+        </section>
 
-<div class="course">
-LOGICIELS LIBRES ET<br>
-OPEN SOURCES 2
-</div>
+        <!-- Academic Details -->
+        <section class="academic-details">
 
-<div class="details">
-<p><strong>Enseignant :</strong> HEDDAM S.</p>
-<p><strong>Réalisé par :</strong> Lakhdar Manar</p>
-</div>
+            <div class="detail">
+                <span>Réalisé par :</span>
+                <strong>Lakhdar Manar</strong>
+            </div>
 
-</div>
+            <div class="detail">
+                <span>Enseignant :</span>
+                <strong>HEDDAM S.</strong>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logiciels Libres et Open Sources 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="cover">
+
+        <!-- University Header -->
+        <header class="header">
+
+            <!-- Department Logo -->
+            <div class="logo-container">
+                <img
+                    src="images/logo-departement.jpg"
+                    alt="Logo du département"
+                    class="logo"
+                >
+            </div>
+
+            <!-- Official Information -->
+            <div class="institution">
+
+                <div class="arabic-header" dir="rtl">
+                    <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+                    <p>وزارة التعليم العالي والبحث العلمي</p>
+                </div>
+
+                <div class="french-header" dir="ltr">
+                    <p>
+                        RÉPUBLIQUE ALGÉRIENNE
+                        DÉMOCRATIQUE ET POPULAIRE
+                    </p>
+
+                    <p>
+                        MINISTÈRE DE L'ENSEIGNEMENT
+                        SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- University Logo -->
+            <div class="logo-container">
+                <img
+                    src="images/logo-universite.jpg"
+                    alt="Logo de l'université"
+                    class="logo"
+                >
+            </div>
+
+        </header>
+
+        <!-- University Information -->
+        <section class="university-info">
+
+            <h1>UNIVERSITÉ 20 AOÛT 1955 – SKIKDA</h1>
+
+            <p>
+                DÉPARTEMENT DES SCIENCES
+                DE LA NATURE ET DE LA VIE
+            </p>
+
+        </section>
+
+        <!-- Main Content -->
+        <section class="main-content">
+
+            <div class="course-label">
+                COURS / TP
+            </div>
+
+            <div class="title-decoration"></div>
+
+            <h2>
+                LOGICIELS LIBRES ET
+                <span>OPEN SOURCES 2</span>
+            </h2>
+
+            <div class="title-decoration"></div>
+
+        </section>
+
+        <!-- Academic Details -->
+        <section class="academic-details">
+
+            <div class="detail">
+                <span>Réalisé par :</span>
+                <strong>Lakhdar Manar</strong>
+            </div>
+
+            <div class="detail">
+                <span>Enseignant :</span>
+                <strong>HEDDAM S.</strong>
+            </div>
+
+        </section>
+
+    </main>
+
 </body>
 </html>
