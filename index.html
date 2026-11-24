@@ -71,19 +71,72 @@ body {
   font-weight: bold;
 }
 
-.logos {
-  display: flex;
-  justify-content: space-between;
+.
+.top-header {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
   align-items: center;
-  margin: 45px 0;
-  gap: 20px;
+  gap: 12px;
+  width: 100%;
+  margin: 25px 0 55px;
 }
 
-.logos img {
-  width: 42%;
-  height: 190px;
+.logo-side {
+  width: 100%;
+  max-height: 145px;
   object-fit: contain;
 }
+
+.institution {
+  text-align: center;
+}
+
+.bilingual-header {
+  text-align: center;
+}
+
+.arabic {
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.french {
+  direction: ltr;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.university {
+  color: #17633e;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.department {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .top-header {
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5px;
+  }
+
+  .logo-side {
+    max-height: 85px;
+  }
+
+  .arabic { font-size: 10px; }
+  .french { font-size: 7px; }
+  .university { font-size: 12px; }
+  .department { font-size: 8px; }
+}
+
 
 h2 {
   margin-top: 65px;
@@ -125,17 +178,43 @@ h2 {
 <div class="page">
 
 
-<div class="bilingual-header">
 
-  <div class="arabic">
-    <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
-    <p>وزارة التعليم العالي والبحث العلمي</p>
+<div class="top-header">
+
+  <img class="logo-side"
+       src="images/logo-departement.jpg"
+       alt="Logo du département">
+
+  <div class="institution">
+
+    <div class="bilingual-header">
+      <div class="arabic">
+        <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+        <p>وزارة التعليم العالي والبحث العلمي</p>
+      </div>
+
+      <div class="french">
+        <p>RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE</p>
+        <p>MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE</p>
+      </div>
+    </div>
+
+    <p class="university">
+      UNIVERSITÉ 20 AOÛT 1955 – SKIKDA
+    </p>
+
+    <p class="department">
+      DÉPARTEMENT DES SCIENCES DE LA NATURE ET DE LA VIE
+    </p>
+
   </div>
 
-  <div class="french">
-    <p>RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE</p>
-    <p>MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE</p>
-  </div>
+  <img class="logo-side"
+       src="images/logo-universite.jpg"
+       alt="Logo de l'université">
+
+</div>
+
 
 </div>
 
