@@ -28,16 +28,36 @@ body {
   text-align: center;
 }
 
-.republic {
-  font-size: 18px;
-  font-weight: bold;
+.
+.bilingual-header {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.ministry {
-  font-size: 15px;
+.arabic {
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  font-size: 19px;
   font-weight: bold;
-  margin-top: 18px;
+  line-height: 1.7;
 }
+
+.arabic p {
+  margin: 5px 0;
+}
+
+.french {
+  direction: ltr;
+  font-family: "Times New Roman", serif;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+.french p {
+  margin: 5px 0;
+}
+
 
 .university {
   font-size: 25px;
@@ -104,14 +124,21 @@ h2 {
 <body>
 <div class="page">
 
-<p class="republic">
-RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE
-</p>
 
-<p class="ministry">
-MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR
-ET DE LA RECHERCHE SCIENTIFIQUE
-</p>
+<div class="bilingual-header">
+
+  <div class="arabic">
+    <p>الجمهورية الجزائرية الديمقراطية الشعبية</p>
+    <p>وزارة التعليم العالي والبحث العلمي</p>
+  </div>
+
+  <div class="french">
+    <p>RÉPUBLIQUE ALGÉRIENNE DÉMOCRATIQUE ET POPULAIRE</p>
+    <p>MINISTÈRE DE L'ENSEIGNEMENT SUPÉRIEUR ET DE LA RECHERCHE SCIENTIFIQUE</p>
+  </div>
+
+</div>
+
 
 <p class="university">
 UNIVERSITÉ 20 AOÛT 1955 – SKIKDA
