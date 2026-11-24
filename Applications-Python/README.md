@@ -63,3 +63,11 @@ Ce fichier est utilisé comme source de données par les applications concernée
 ## Objectif pédagogique
 
 Mettre en pratique les bibliothèques Python dans l'analyse statistique, la visualisation des données et l'étude des phénomènes agronomiques et environnementaux.
+## Informations académiques
+
+- Université : Université 20 Août 1955 – Skikda
+- Faculté : Faculté des Sciences de la Nature et de la Vie
+- Département : Département des Sciences Agronomiques
+- Module : Logiciels Libres et Open Sources 2
+- Réalisé par : Lakhdar Manar
+- Encadré par : HEDDAM S.
