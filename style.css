@@ -1,435 +1,257 @@
 
-/* ======================================
-   1. GLOBAL SETTINGS
-====================================== */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root {
-    --green-dark: #174D37;
-    --green-main: #28734F;
-    --green-light: #E7F0E9;
-    --green-soft: #F5F8F5;
-    --text-dark: #24332A;
-    --text-muted: #64746A;
-}
-
 body {
-    font-family: "Times New Roman", serif;
-    background: #E9EFEB;
-    color: var(--text-dark);
+    background: #e9eeeb;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #263b35;
     padding: 25px;
 }
-
-
-/* ======================================
-   2. A4 PAGE
-====================================== */
 
 .cover {
     width: 210mm;
     min-height: 297mm;
     margin: auto;
-    padding: 17mm 15mm 13mm;
-
-    background: #FFFFFF;
-    border: 1px solid #D5E1D8;
-
-    display: flex;
-    flex-direction: column;
-
+    background: #ffffff;
+    padding: 22mm 17mm;
     position: relative;
-    overflow: hidden;
+    border-top: 9px solid #176b50;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.10);
 }
 
-
-/* ======================================
-   3. TOP DECORATION
-====================================== */
-
-.top-accent {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 7px;
-
-    background: linear-gradient(
-        90deg,
-        var(--green-dark),
-        #73A98A,
-        var(--green-dark)
-    );
-}
-
-
-/* ======================================
-   4. HEADER
-====================================== */
+/* HEADER */
 
 .header {
     display: grid;
-
-    grid-template-columns: 1fr 2.7fr 1fr;
-
+    grid-template-columns: 100px 1fr 100px;
     align-items: center;
-    gap: 12px;
-
-    width: 100%;
-}
-
-.logo-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 15px;
+    text-align: center;
 }
 
 .logo {
-    width: 100%;
-    max-width: 125px;
-    height: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.logo img {
+    width: 95px;
+    height: 95px;
     object-fit: contain;
 }
 
-
-/* ======================================
-   5. ARABIC TEXT
-====================================== */
-
 .institution {
-    text-align: center;
+    line-height: 1.6;
 }
 
 .arabic {
-    direction: rtl;
-
-    font-family: Arial, sans-serif;
-
-    color: var(--green-dark);
-
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
-
-    line-height: 1.8;
-
-    margin-bottom: 12px;
+    direction: rtl;
+    margin-bottom: 3px;
 }
-
-.arabic p {
-    margin: 3px 0;
-}
-
-
-/* ======================================
-   6. FRENCH TEXT
-====================================== */
 
 .french {
-    direction: ltr;
-
-    font-family: "Times New Roman", serif;
-
-    color: var(--text-muted);
-
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
-
-    line-height: 1.6;
+    color: #425c52;
+    margin-top: 5px;
 }
 
-.french p {
-    margin: 4px 0;
-}
+/* UNIVERSITY */
 
-
-/* ======================================
-   7. UNIVERSITY INFORMATION
-====================================== */
-
-.university-info {
+.university {
     text-align: center;
-
-    margin-top: 35px;
+    margin-top: 55px;
 }
 
-.small-line {
-    width: 65px;
+.university h2 {
+    font-size: 19px;
+    color: #176b50;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.green-line {
+    width: 85px;
     height: 3px;
-
-    background: var(--green-main);
-
-    margin: 0 auto 15px;
+    background: #a5c9ad;
+    margin: 0 auto 20px;
 }
 
-.university-info h1 {
-    color: var(--green-dark);
-
-    font-size: 24px;
-    font-weight: bold;
-
-    letter-spacing: 0.5px;
-
-    margin-bottom: 12px;
-}
-
-.university-info p {
-    color: var(--text-muted);
-
+.university h3 {
     font-size: 14px;
-    font-weight: bold;
-
-    letter-spacing: 0.4px;
+    margin: 9px 0;
+    color: #344d43;
+    letter-spacing: 0.3px;
 }
 
+/* WORK */
 
-/* ======================================
-   8. MAIN CONTENT
-====================================== */
-
-.main-content {
-    flex: 1;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
+.work {
     text-align: center;
-
-    padding: 35px 0;
+    margin-top: 85px;
 }
 
-.label {
-    color: var(--green-main);
-
-    font-size: 21px;
+.work-label {
+    display: inline-block;
+    color: #176b50;
+    font-size: 15px;
     font-weight: bold;
-
     letter-spacing: 3px;
-
     margin-bottom: 25px;
 }
 
-
-/* ======================================
-   9. TITLE PANEL
-====================================== */
-
-.title-panel {
-    width: 100%;
-
-    padding: 45px 20px;
-
-    background: var(--green-soft);
-
-    border-left: 5px solid var(--green-main);
-    border-right: 5px solid var(--green-main);
+.title-box {
+    background: #edf5ef;
+    border-left: 5px solid #176b50;
+    border-right: 5px solid #176b50;
+    padding: 28px 18px;
 }
 
-.title-panel h2 {
-    color: var(--text-dark);
-
-    font-size: 32px;
-    line-height: 1.6;
-
-    font-weight: bold;
+.title-box h1 {
+    font-size: 25px;
+    line-height: 1.5;
+    color: #174f3d;
 }
 
-.title-panel h2 span {
-    display: block;
+/* INFORMATION */
 
-    color: var(--green-dark);
+.information {
+    width: 75%;
+    margin: 75px auto 0;
+    padding: 22px 25px;
+    background: #fafcfb;
+    border: 1px solid #dce8df;
 }
 
-.title-line {
-    width: 90px;
-    height: 3px;
-
-    background: var(--green-main);
-
-    margin: 25px auto 0;
-}
-
-
-/* ======================================
-   10. ACADEMIC DETAILS
-====================================== */
-
-.academic-details {
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 25px;
-
-    padding: 25px 20px;
-
-    background: var(--green-soft);
-
-    border-top: 1px solid #D8E5DB;
-}
-
-.detail-item {
+.info-row {
     display: flex;
-    flex-direction: column;
-
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0;
+    font-size: 16px;
 }
 
-.detail-label {
-    color: var(--green-main);
-
-    font-size: 12px;
-    font-weight: bold;
-
-    letter-spacing: 1px;
+.info-row span {
+    color: #64776d;
 }
 
-.detail-item strong {
-    color: var(--text-dark);
-
-    font-size: 18px;
-    font-weight: normal;
+.info-row strong {
+    color: #174f3d;
 }
 
-
-/* ======================================
-   11. FOOTER
-====================================== */
+/* FOOTER */
 
 .footer {
-    margin-top: 30px;
-
+    position: absolute;
+    bottom: 22mm;
+    left: 17mm;
+    right: 17mm;
     text-align: center;
 }
 
 .footer-line {
-    width: 100%;
     height: 1px;
-
-    background: #D8E5DB;
-
-    margin-bottom: 12px;
+    background: #dce8df;
+    margin-bottom: 15px;
 }
 
-.footer span {
-    color: var(--text-muted);
-
+.footer p {
     font-size: 10px;
-    letter-spacing: 1px;
+    color: #789084;
+    letter-spacing: 2px;
 }
 
-
-/* ======================================
-   12. MOBILE RESPONSIVE
-====================================== */
+/* MOBILE */
 
 @media screen and (max-width: 700px) {
 
     body {
-        padding: 8px;
+        padding: 10px;
     }
 
     .cover {
         width: 100%;
         min-height: 850px;
-
-        padding: 28px 12px 18px;
+        padding: 25px 15px;
     }
 
     .header {
-        grid-template-columns: 1fr 2.5fr 1fr;
+        grid-template-columns: 65px 1fr 65px;
         gap: 5px;
     }
 
-    .logo {
-        height: auto;
-        max-height: 85px;
+    .logo img {
+        width: 60px;
+        height: 60px;
     }
 
     .arabic {
-        font-size: 10px;
+        font-size: 9px;
     }
 
     .french {
-        font-size: 7px;
+        font-size: 6px;
     }
 
-    .university-info {
-        margin-top: 25px;
+    .university {
+        margin-top: 45px;
     }
 
-    .university-info h1 {
-        font-size: 16px;
+    .university h2 {
+        font-size: 15px;
     }
 
-    .university-info p {
-        font-size: 10px;
+    .university h3 {
+        font-size: 11px;
     }
 
-    .label {
-        font-size: 16px;
+    .work {
+        margin-top: 65px;
     }
 
-    .title-panel {
-        padding: 30px 10px;
+    .title-box h1 {
+        font-size: 19px;
     }
 
-    .title-panel h2 {
-        font-size: 22px;
+    .information {
+        width: 95%;
+        margin-top: 55px;
+        padding: 15px;
     }
 
-    .academic-details {
-        gap: 12px;
-        padding: 18px 10px;
+    .info-row {
+        font-size: 13px;
     }
 
-    .detail-label {
-        font-size: 10px;
+    .footer {
+        bottom: 25px;
+        left: 15px;
+        right: 15px;
     }
-
-    .detail-item strong {
-        font-size: 14px;
-    }
-
-    .footer span {
-        font-size: 8px;
-    }
-
 }
 
-
-/* ======================================
-   13. PRINT A4
-====================================== */
+/* PRINT */
 
 @media print {
 
-    @page {
-        size: A4 portrait;
-        margin: 0;
-    }
-
     body {
-        padding: 0;
         background: white;
+        padding: 0;
     }
 
     .cover {
         width: 210mm;
         height: 297mm;
         min-height: 297mm;
-
         margin: 0;
-
-        border: 1px solid #D5E1D8;
+        box-shadow: none;
     }
 
 }
